@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="btn_actualizarAuto" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="838.0" prefWidth="1104.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="txt_nombreCliente" layoutX="370.0" layoutY="96.0" promptText="Nombre" />
+      <TextField fx:id="txt_apellido" layoutX="370.0" layoutY="153.0" promptText="Apellido" />
+      <TextField fx:id="txt_cedula" layoutX="370.0" layoutY="209.0" promptText="Cedula" />
+      <TextField fx:id="txt_aedad" layoutX="370.0" layoutY="269.0" promptText="Edad" />
+      <TableView fx:id="tb_listClientes" layoutX="48.0" layoutY="442.0" prefHeight="344.0" prefWidth="1021.0">
+        <columns>
+          <TableColumn fx:id="tbc_nombre" prefWidth="172.0" text="Nombre" />
+          <TableColumn fx:id="tbc_apellido" minWidth="0.0" prefWidth="149.0" text="Apellido" />
+            <TableColumn fx:id="tbc_cedula" prefWidth="141.0" text="Cedula" />
+            <TableColumn fx:id="tbc_edad" prefWidth="130.0" text="Edad" />
+            <TableColumn fx:id="tbc_email" prefWidth="276.0" text="Email" />
+            <TableColumn fx:id="tbc_telefono" prefWidth="152.0" text="Telefono" />
+        </columns>
+      </TableView>
+      <Label fx:id="lbl_gestionMotos" layoutX="340.0" layoutY="24.0" text="Gestion de Clientes" textFill="#7d98a1">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_añadirCliente" layoutX="632.0" layoutY="135.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="242.0" style="-fx-background-color: a9b4c2;" text="Añadir Cliente" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_actualizarCliente" layoutX="632.0" layoutY="199.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="242.0" style="-fx-background-color: a9b4c2;" text="Actualizar Cliente" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_eliminarCliente" layoutX="632.0" layoutY="263.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="242.0" style="-fx-background-color: a9b4c2;" text="Eliminar Cliente" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_limpiarCliente" layoutX="632.0" layoutY="332.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="242.0" style="-fx-background-color: a9b4c2;" text="Limpiar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Label fx:id="lbl_nombreCliente" layoutX="114.0" layoutY="98.0" text="Nombre:" textFill="#7d98a1">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_apellidoCliente" layoutX="113.0" layoutY="155.0" text="Apellido:" textFill="#7d98a1">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_cedulaCliente" layoutX="110.0" layoutY="211.0" text="Cedula:" textFill="#7d98a1">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_emailCliente" layoutX="109.0" layoutY="322.0" text="Email:" textFill="#7d98a1">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_edadCliente" layoutX="112.0" layoutY="271.0" text="Edad:" textFill="#7d98a1">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="img_logo" fitHeight="200.0" fitWidth="200.0" layoutX="879.0" layoutY="24.0">
+         <image>
+            <Image url="@../../../../../../../../../../AppData/Local/Packages/5319275A.WhatsAppDesktop_cv1g1gvanyjgm/TempState/E430DEB739CC669AD740C421931BC8F8/Imagen%20de%20WhatsApp%202024-11-02%20a%20las%2015.53.50_7c5b8241.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="lbl_telefonoCliente" layoutX="110.0" layoutY="376.0" text="Telefono:" textFill="#7d98a1">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_email" layoutX="370.0" layoutY="320.0" promptText="Email" />
+      <TextField fx:id="txt_telefono" layoutX="370.0" layoutY="374.0" promptText="Telefono" />
+   </children>
+</AnchorPane>

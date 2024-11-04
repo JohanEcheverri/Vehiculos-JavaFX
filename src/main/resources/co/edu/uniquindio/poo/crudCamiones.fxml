@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="btn_actualizarAuto" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="803.0" prefWidth="1103.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="txt_matriculaAuto" layoutX="370.0" layoutY="96.0" promptText="Matricula" />
+      <TextField fx:id="txt_marcaAuto" layoutX="370.0" layoutY="153.0" promptText="Marca" />
+      <TextField fx:id="txt_modeloAuto" layoutX="370.0" layoutY="209.0" promptText="Modelo" />
+      <TextField fx:id="txt_añodefabricacionAuto" layoutX="370.0" layoutY="269.0" promptText="Año de Fabricacion" />
+      <TextField fx:id="txt_numeroPuertas" layoutX="370.0" layoutY="328.0" promptText="Capacidad de Carga" />
+      <TableView fx:id="tb_listCamiones" layoutX="41.0" layoutY="421.0" prefHeight="344.0" prefWidth="1021.0">
+        <columns>
+          <TableColumn fx:id="tbc_matriculaCamion" prefWidth="202.0" text="Matrcicula" />
+          <TableColumn fx:id="tbc_marcaCamion" minWidth="0.0" prefWidth="234.0" text="Marca" />
+            <TableColumn fx:id="tbc_modeloCamion" prefWidth="211.0" text="Modelo" />
+            <TableColumn fx:id="tbc_añoCamion" prefWidth="124.0" text="Año" />
+            <TableColumn fx:id="tbc_capacidadCarga" prefWidth="249.0" text="Capacidad de Carga" />
+        </columns>
+      </TableView>
+      <Label layoutX="340.0" layoutY="24.0" text="Gestion de Camiones" textFill="#7d98a1">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_añadirCamion" layoutX="632.0" layoutY="124.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="242.0" style="-fx-background-color: a9b4c2;" text="Añadir Camion" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_actualizarCamion" layoutX="632.0" layoutY="184.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="242.0" style="-fx-background-color: a9b4c2;" text="Actualizar Camion" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_eliminarCamion" layoutX="632.0" layoutY="246.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="242.0" style="-fx-background-color: a9b4c2;" text="Eliminar Camion" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_limpiarCamion" layoutX="632.0" layoutY="308.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="242.0" style="-fx-background-color: a9b4c2;" text="Limpiar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Label fx:id="lbl_matriculaCamion" layoutX="101.0" layoutY="98.0" text="Matricula:" textFill="#7d98a1">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_marcaCamion" layoutX="101.0" layoutY="155.0" text="Marca:" textFill="#7d98a1">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_modeloCamion" layoutX="101.0" layoutY="211.0" text="Modelo:" textFill="#7d98a1">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_capacidad" layoutX="101.0" layoutY="330.0" text="Capacidad de Carga:" textFill="#7d98a1">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_añoCamion" layoutX="101.0" layoutY="271.0" text="Año de Fabricacion:" textFill="#7d98a1">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="img_logo" fitHeight="200.0" fitWidth="200.0" layoutX="879.0" layoutY="24.0">
+         <image>
+            <Image url="@../../../../../../../../../../AppData/Local/Packages/5319275A.WhatsAppDesktop_cv1g1gvanyjgm/TempState/E430DEB739CC669AD740C421931BC8F8/Imagen%20de%20WhatsApp%202024-11-02%20a%20las%2015.53.50_7c5b8241.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

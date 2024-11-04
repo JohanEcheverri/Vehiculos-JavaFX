@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="955.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="264.0" layoutY="136.0" prefHeight="66.0" prefWidth="394.0" text="Dias:" textFill="#7d98a1">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_dias" layoutX="373.0" layoutY="150.0" promptText="Dias" />
+      <Label fx:id="txt_preguntarVehiculo" layoutX="264.0" layoutY="101.0" text="Vehiculo" textFill="#7d98a1">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="img_logo" fitHeight="200.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0">
+         <image>
+            <Image url="@../../../../../../../../../../AppData/Local/Packages/5319275A.WhatsAppDesktop_cv1g1gvanyjgm/TempState/E430DEB739CC669AD740C421931BC8F8/Imagen%20de%20WhatsApp%202024-11-02%20a%20las%2015.53.50_7c5b8241.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="tbn_resercar" layoutX="651.0" layoutY="95.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="132.0" style="-fx-background-color: a9b4c2;" text="Reservar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="264.0" layoutY="40.0" text="Ingrese Los Datos Para Realizar La Reserva:" textFill="#7d98a1">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cb_vehiculo" layoutX="373.0" layoutY="95.0" prefHeight="39.0" prefWidth="224.0" promptText="Vehiculo" />
+      <Button fx:id="tbn_resercar1" layoutX="651.0" layoutY="150.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="132.0" style="-fx-background-color: a9b4c2;" text="Limpiar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tb_listReservaCliente" layoutX="42.0" layoutY="243.0" prefHeight="252.0" prefWidth="863.0">
+        <columns>
+          <TableColumn fx:id="tbc_vehiculo" prefWidth="474.0" text="Vehiculo" />
+          <TableColumn fx:id="tbc_dias" minWidth="0.0" prefWidth="196.0" text="Dias" />
+            <TableColumn fx:id="tbc_costo" prefWidth="192.0" text="Costo" />
+        </columns>
+      </TableView>
+      <Button fx:id="tbn_calcularCosto" layoutX="256.0" layoutY="518.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="234.0" style="-fx-background-color: a9b4c2;" text="Calcular Costo" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="tbn_calcularCosto1" layoutX="520.0" layoutY="518.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="234.0" style="-fx-background-color: a9b4c2;" text="Cancelar Reserva" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

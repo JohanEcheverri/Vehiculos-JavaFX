@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="btn_actualizarAuto" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="803.0" prefWidth="1103.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="txt_matriculaMoto" layoutX="370.0" layoutY="96.0" promptText="Matricula" />
+      <TextField fx:id="txt_marcaMoto" layoutX="370.0" layoutY="153.0" promptText="Marca" />
+      <TextField fx:id="txt_modeloMoto" layoutX="370.0" layoutY="209.0" promptText="Modelo" />
+      <TextField fx:id="txt_añodefabricacionMoto" layoutX="370.0" layoutY="269.0" promptText="Año de Fabricacion" />
+      <TableView fx:id="tb_listCamiones" layoutX="41.0" layoutY="421.0" prefHeight="344.0" prefWidth="1021.0">
+        <columns>
+          <TableColumn fx:id="tbc_matriculaMoto" prefWidth="202.0" text="Matrcicula" />
+          <TableColumn fx:id="tbc_marcaMoto" minWidth="0.0" prefWidth="234.0" text="Marca" />
+            <TableColumn fx:id="tbc_modeloMoto" prefWidth="211.0" text="Modelo" />
+            <TableColumn fx:id="tbc_añoMoto" prefWidth="168.0" text="Año" />
+            <TableColumn fx:id="tbc_caja" prefWidth="205.0" text="Caja" />
+        </columns>
+      </TableView>
+      <Label fx:id="lbl_gestionMotos" layoutX="340.0" layoutY="24.0" text="Gestion de Motos" textFill="#7d98a1">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_añadirMoto" layoutX="632.0" layoutY="124.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="242.0" style="-fx-background-color: a9b4c2;" text="Añadir Moto" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_actualizarMoto" layoutX="632.0" layoutY="184.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="242.0" style="-fx-background-color: a9b4c2;" text="Actualizar Moto" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_eliminarMoto" layoutX="632.0" layoutY="246.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="242.0" style="-fx-background-color: a9b4c2;" text="Eliminar Moto" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_limpiarMoto" layoutX="632.0" layoutY="308.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="242.0" style="-fx-background-color: a9b4c2;" text="Limpiar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Label fx:id="lbl_matriculaMoto" layoutX="101.0" layoutY="98.0" text="Matricula:" textFill="#7d98a1">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_marcaMoto" layoutX="101.0" layoutY="155.0" text="Marca:" textFill="#7d98a1">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_modeloMoto" layoutX="101.0" layoutY="211.0" text="Modelo:" textFill="#7d98a1">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_caja" layoutX="101.0" layoutY="330.0" text="Caja:" textFill="#7d98a1">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_añoMoto" layoutX="101.0" layoutY="271.0" text="Año de Fabricacion:" textFill="#7d98a1">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="img_logo" fitHeight="200.0" fitWidth="200.0" layoutX="879.0" layoutY="24.0">
+         <image>
+            <Image url="@../../../../../../../../../../AppData/Local/Packages/5319275A.WhatsAppDesktop_cv1g1gvanyjgm/TempState/E430DEB739CC669AD740C421931BC8F8/Imagen%20de%20WhatsApp%202024-11-02%20a%20las%2015.53.50_7c5b8241.jpg" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="cb_caja" layoutX="370.0" layoutY="328.0" prefHeight="39.0" prefWidth="223.0" promptText="Caja" />
+   </children>
+</AnchorPane>

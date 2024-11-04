@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="846.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="img_logo" fitHeight="323.0" fitWidth="309.0" layoutX="71.0" layoutY="61.0">
+         <image>
+            <Image url="@../../../../../../../../../../AppData/Local/Packages/5319275A.WhatsAppDesktop_cv1g1gvanyjgm/TempState/E430DEB739CC669AD740C421931BC8F8/Imagen%20de%20WhatsApp%202024-11-02%20a%20las%2015.53.50_7c5b8241.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txt_nombreCliente" layoutX="567.0" layoutY="32.0" promptText="Nombre" />
+      <TextField fx:id="txt_apellidoCliente" layoutX="567.0" layoutY="82.0" promptText="Apellido" />
+      <TextField fx:id="txt_cedulaCliente" layoutX="567.0" layoutY="140.0" promptText="Cedula" />
+      <TextField fx:id="txt_edadCliente" layoutX="567.0" layoutY="195.0" promptText="Edad" />
+      <TextField fx:id="txt_correoCliente" layoutX="567.0" layoutY="254.0" promptText="Correo" />
+      <TextField fx:id="txt_telefonoClinete" layoutX="567.0" layoutY="310.0" promptText="Telefono" />
+      <Label fx:id="lbl_nombreCliente" layoutX="471.0" layoutY="38.0" text="Nombre:" textFill="#7d98a1">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_apellidoCliente" layoutX="470.0" layoutY="88.0" text="Apellido:" textFill="#7d98a1">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_cedulaCliente" layoutX="470.0" layoutY="140.0" text="Cedula:" textFill="#7d98a1">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_edadCliente" layoutX="470.0" layoutY="195.0" text="Edad:" textFill="#7d98a1">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_correoCliente" layoutX="465.0" layoutY="254.0" text="Correo:" textFill="#7d98a1">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_telefonoCliente" layoutX="465.0" layoutY="310.0" text="Telefono:" textFill="#7d98a1">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_iniciarSesion" layoutX="615.0" layoutY="374.0" mnemonicParsing="false" onAction="#onOpenClienteHacerReserva" prefHeight="51.0" prefWidth="176.0" style="-fx-background-color: a9b4c2;" text="Iniciar Sesión" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="429.0" layoutY="374.0" mnemonicParsing="false" onAction="#onLimpiar" prefHeight="51.0" prefWidth="176.0" style="-fx-background-color: a9b4c2;" text="Limpiar" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
